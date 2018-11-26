@@ -69,3 +69,11 @@ font-family: 'Open Sans', sans-serif;
   opacity: 0.6;
   z-index: 990;
 }
+
+.hero-image {
+  background: url("../images/activity-fair.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+}

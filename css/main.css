@@ -137,3 +137,17 @@ ul {
   padding-top: 20px;
   margin: 0;
 }
+
+/* Footer */
+footer {
+  background-color: #336699;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}

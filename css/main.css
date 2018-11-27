@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 
+/* Fonts */
 h1,h2,h3,h4,h5,h6 {
 color: black;
 font-family: 'Montserrat', sans-serif;
@@ -15,10 +16,11 @@ background-color: #d9e1e8;
   font-family: 'Open Sans', sans-serif;
 }
 
+
 /* Navigation Side Bar */
 .navbar-side {
   height: 100%;
-  width: 25%;
+  width: 30%;
   position: fixed;
   top: 0;
   right: 0;
@@ -33,14 +35,20 @@ background-color: #d9e1e8;
   transform: translateX(100%);
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
+}
+
+#navbarSideButton,.btn {
+  color: #ffffff;
+  background-color: #336699;
+}
+
+/*
   @include media-breakpoint-up(sm) {width: 85%;} //Small
   @include media-breakpoint-up(md) {width: 50%;} // Medium
   @include media-breakpoint-up(lg) {width: 25%;} // Large
-}
 
-.nav-link{
-  color: #2e2d2d;
-}
+
+*/
 
 .navbar-side-item {
  padding: 1.5rem 0;
@@ -117,11 +125,12 @@ background-color: #d9e1e8;
     font-size: 16px;
 }
 
-
+/* Upcoming Event Sub-title */
 .upcoming-events {
     text-decoration: underline;
   }
 
+/* Event Cards */
 ul {
   list-style-type: none;
   padding: 0;

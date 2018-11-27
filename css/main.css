@@ -45,6 +45,11 @@ i {
   background-color: #336699;
 }
 
+.btn:hover {
+  text-decoration: underline;
+  background-color: #336699 !important;
+}
+
 /*
   @include media-breakpoint-up(sm) {width: 85%;} //Small
   @include media-breakpoint-up(md) {width: 50%;} // Medium
@@ -162,5 +167,15 @@ footer a {
 
 footer a:hover {
   color: white;
+  text-decoration: underline;
+}
+
+
+
+
+
+/* EVENT CALENDAR CSS */
+
+.past-events:hover {
   text-decoration: underline;
 }

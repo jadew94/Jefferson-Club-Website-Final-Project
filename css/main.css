@@ -143,6 +143,14 @@ ul {
   margin: 0;
 }
 
+.eventicon {
+  padding-right: 10px;
+}
+
+small {
+  font-weight: bold;
+}
+
 /* Footer */
 footer {
   background-color: #336699;

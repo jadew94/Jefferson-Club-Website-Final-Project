@@ -121,3 +121,10 @@ background-color: #d9e1e8;
 .upcoming-events {
     text-decoration: underline;
   }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 20px;
+  margin: 0;
+}

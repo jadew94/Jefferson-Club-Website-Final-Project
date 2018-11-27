@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 
-h1,h2,h3,h4,h5,h6{
-  color: black;
+h1,h2,h3,h4,h5,h6 {
+color: black;
 font-family: 'Montserrat', sans-serif;
 }
 
 body {
 color: black;
 font-family: 'Open Sans', sans-serif;
+background-color: #d9e1e8;
 }
 
 .side-link {
@@ -37,10 +38,14 @@ font-family: 'Open Sans', sans-serif;
   @include media-breakpoint-up(lg) {width: 25%;} // Large
 }
 
+.nav-link{
+  color: #2e2d2d;
+}
+
 .navbar-side-item {
  padding: 1.5rem 0;
  margin: 0;
- border-bottom: 2px solid #ccc;
+ border-bottom: 2px solid #2e2d2d;
  height: 5rem;
 }
 
@@ -65,11 +70,12 @@ font-family: 'Open Sans', sans-serif;
   right: 0;
   bottom: 0;
   cursor: pointer;
-  background-color: #ccc;
+  background-color: #ffffff;
   opacity: 0.6;
   z-index: 990;
 }
 
+/* Hero Image */
 .hero-image {
   background: url("../images/activity-fair.jpg") no-repeat center center;
   background-size: cover;
@@ -110,3 +116,8 @@ font-family: 'Open Sans', sans-serif;
 #custom-search-input .glyphicon-search{
     font-size: 16px;
 }
+
+
+.upcoming-events {
+    text-decoration: underline;
+  }

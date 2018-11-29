@@ -189,7 +189,8 @@ footer a:hover {
 
 /* Filter Modal Category List */
 .category-list {
-  all: unset;
+  background-color: white;
+  color:black;
 }
 
 .category-list:hover {

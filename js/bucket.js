@@ -14,7 +14,7 @@ $( document ).ready(function() {
 
   // JQueryUI date picker for event calendar
   $( function() {
-     $( "#datepicker" ).datepicker();
+     $( ".datepicker" ).datepicker();
    } );
 
    $(".dropdown-menu li a").click(function(){

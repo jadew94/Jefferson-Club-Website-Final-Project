@@ -182,6 +182,17 @@ footer a:hover {
 
 /* EVENT CALENDAR CSS */
 
+/* Past Event Link */
 .past-events:hover {
   text-decoration: underline;
+}
+
+/* Filter Modal Category List */
+.category-list {
+  all: unset;
+}
+
+.category-list:hover {
+  background-color: white !important;
+  text-decoration: none !important;
 }

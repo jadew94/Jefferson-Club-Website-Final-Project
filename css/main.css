@@ -6,7 +6,7 @@ color: black;
 font-family: 'Montserrat', sans-serif;
 }
 
-body {
+body, label {
 color: black;
 font-family: 'Open Sans', sans-serif;
 background-color: #ffffff;

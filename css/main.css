@@ -54,6 +54,9 @@ i {
   background-color: #336699 !important;
 }
 
+.navbar-light:hover {
+  text-decoration: underline;
+}
 /*
   @include media-breakpoint-up(sm) {width: 85%;} //Small
   @include media-breakpoint-up(md) {width: 50%;} // Medium

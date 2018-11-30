@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jefferson Event and Club Directory</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Our Code Starts Here -->
+    <div class="container content-box">  <!-- Begin Outer Container -->
+      <nav class="navbar navbar-light navbar-static bg-faded"> <!-- Navigation/Heading -->
+        <div>
+          <a href="#"><img src="images/jeffersonlogo.png" alt="Jefferson school logo" class="logo" height="120"></a>
+        </div>
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link sign-in" href="#">Sign In</a>
+            </li>
+            <li><button class="navbar-toggler pull-xs-right" id="navbarSideButton" type="button">
+              &#9776;
+            </button></li>
+            </ul>
+            <ul class="navbar-side" id="navbarSide"> <!-- navbar side bar -->
+              <li class="navbar-side-item">
+                <i class="fas fa-home fa-lg icon"></i><a href="#" class="side-link">Home</a>
+              </li>
+              <li class="navbar-side-item">
+                <i class="far fa-calendar-alt fa-lg icon"></i><a href="#" class="side-link">Events</a>
+              </li>
+              <li class="navbar-side-item">
+                <i class="fas fa-users fa-lg icon"></i><a href="#" class="side-link">Clubs</a>
+              </li>
+            </ul>
+        <div class="overlay"></div>
+      </nav> <!-- End of Navigation/Heading -->
+      <div class="row"> <!-- Event Calendar Title -->
+        <h1 class="text-center display-4 mt-4">Event Calendar</h1>
+    </div> <!-- End of Event Calendar Title -->
+    <div class="past-events mt-5 mb-4"> <!-- Upcoming Events -->
+      <a class="" href="#"><h5> Past Events </h5></a>
+  </div> <!-- End of Upcoming Events -->
+    <div class="container"> <!-- Search Bar/Filter Modal-->
+    	<div class="row justify-content-center">
+        <div class="col-md-8">
+          <div id="custom-search-input">
+            <div class="input-group col-md-12">
+              <input type="text" class="form-control input-lg" placeholder="Search for Events"/>
+              <span class="input-group-btn">
+                <button class="btn btn-info btn-lg" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
+              Filters
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Filters</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body"> <!-- Modal Body -->
+                    <h5>Dates</h5>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">This Weekend</label>
+                    </div>
+                    <p class="mt-3">Beginning this Date:</p>
+                      <input type="text" class="datepicker">
+                    <p class="mt-3">Ending this Date:</p>
+                      <input type="text" class="datepicker">
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle category-list mt-3" type="button" id="menu1" data-toggle="dropdown">Event Categories
+                        <span class="caret"></span></button>
+                          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li class="dropdown-header">Select an Event Type<li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Community Service</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cultural</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fundraiser</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">General</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Off-Campus</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Party</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Speaker/Talk</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sports</a></li>
+                            <li role="presentation" class="divider"></li>
+                          </ul>
+                    </div>
+                  </div> <!-- End Modal Body -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Reset Filters</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Apply Filters</button>
+                  </div>
+                </div>
+              </div>
+            </div>  <!-- End Modal -->
+        </div>
+    	</div>
+    </div> <!-- End of Search Bar/Filter Modal-->
+  <div class="card-deck mt-5 mb-5"> <!-- Event Cards-->
+    <div class="card"> <!-- Event Card 1-->
+      <img class="card-img-top" src="images/mental_health.jpg" alt="conversational bubble asking how you are feeling">
+      <div class="card-body">
+        <h5 class="card-title">Mental Health Day</h5>
+          <ul>
+            <li> Tuesday, December 18 at 5:00pm EST </li>
+            <li> Kanbar Lounge </li>
+          </ul>
+      </div>
+      <div class="card-footer">
+        <img src="images/mentalmind.png" alt="purple mental health icon" class="eventicon" height="35"><small class="text-dark">Active Minds</small>
+      </div>
+    </div> <!-- End Event Card 1-->
+    <div class="card"> <!-- Event Card 2-->
+      <img class="card-img-top" src="images/singing.jpg" alt="performance shot of acapella singers">
+      <div class="card-body">
+        <h5 class="card-title">Singapalooza!</h5>
+        <ul>
+          <li> Thursday, December 20 at 7:00pm EST </li>
+          <li> Downs Auditorium </li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <img src="images/singing.png" alt="singer icon" class="eventicon" height="35"><small class="text-dark">Jefferson Singers</small>
+      </div>
+    </div> <!-- End Event Card 2-->
+    <div class="card"> <!-- Event Card 3-->
+      <img class="card-img-top" src="images/christmas_dinner.jpg" alt="old timey photo of christmas dinner">
+      <div class="card-body">
+        <h5 class="card-title">Christmas Feast</h5>
+          <ul>
+            <li> Monday, December 24 at 6:30pm EST </li>
+            <li> Ravenhill Dining Hall </li>
+          </ul>
+      </div>
+      <div class="card-footer">
+        <img src="images/campusactivities.png" alt="yellow icon heads" class="eventicon" height="35"><small class="text-dark">Campus Activities Board</small>
+      </div>
+    </div> <!-- End Event Card 3-->
+    <div class="card"> <!-- Event Card 4-->
+      <img class="card-img-top" src="images/avengers.jpg" alt="Movie poster for Avengers 4 movie">
+      <div class="card-body">
+        <h5 class="card-title">The Avengers 4 Movie Night</h5>
+          <ul>
+            <li>Friday, January 11 at 7:30pm EST </li>
+            <li> Paul J. Gutman Library </li>
+          </ul>
+      </div>
+      <div class="card-footer">
+        <img src="images/campusactivities.png" alt="yellow icon heads" class="eventicon" height="35"><small class="text-dark">Campus Activities Board</small>
+      </div>
+    </div> <!-- End Event Card 4-->
+    <div class="card"> <!-- Event Card 5-->
+      <img class="card-img-top" src="images/mlkjr.jpg" alt="Martin Luther King Jr. looking up">
+      <div class="card-body">
+        <h5 class="card-title">MLK Day of Service</h5>
+          <ul>
+            <li> Monday, January 21 at 10:00am EST </li>
+            <li> Ronald McDonald House </li>
+          </ul>
+      </div>
+      <div class="card-footer">
+        <img src="images/blackunion.jpg" alt="black afro with pick in the side" class="eventicon" height="35"><small class="text-dark">Black Student Union</small>
+      </div>
+    </div> <!-- End Event Card 5-->
+</div> <!-- End of Event Cards -->
+<button type="button" class="btn btn-primary btn-lg mt-2 mb-5">View more events</button>
+<footer class="page-footer font-small"> <!-- Footer -->
+  <div class="text-center text-light py-3">© 2018 Copyright:
+    <a href="https://jade-wilburn.squarespace.com/"> Jade Wilburn</a>
+  </div>
+</footer> <!-- End of Footer -->
+
+
+
+
+
+
+
+
+</div>
+    <!-- Our Code Ends Here -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then custom JS in the "bucket" -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="libraries/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/bucket.js"></script>
+  </body>
+</html>

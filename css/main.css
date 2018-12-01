@@ -190,12 +190,12 @@ footer a:hover {
 /* Filter Modal Category List */
 .category-list {
   background-color: white;
+  border-color: #336699;
   color:black;
 }
 
 .category-list:hover {
   background-color: white !important;
-  text-decoration: none !important;
 }
 
 

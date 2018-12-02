@@ -215,3 +215,10 @@ footer a:hover {
 .rsvp-box {
   background-color: white;
 }
+
+
+/* CLUB DIRECTORY CSS */
+
+.clubicon {
+  display: inline-block;
+}

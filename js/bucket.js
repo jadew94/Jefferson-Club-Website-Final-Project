@@ -12,6 +12,19 @@ $( document ).ready(function() {
     $('.overlay').hide();
   });
 
+  // Open AccountnavbarSide when Sign In is clicked
+  $('.sign-in').on('click', function() {
+    $('#AccountnavbarSide').addClass('reveal');
+    $('.overlay').show();
+  });
+
+  // Close AccountnavbarSide when the outside of menu is clicked
+  $('.overlay').on('click', function(){
+    $('#AccountnavbarSide').removeClass('reveal');
+    $('.overlay').hide();
+  });
+
+
   // JQueryUI date picker for event calendar
   $( function() {
      $( ".datepicker" ).datepicker();

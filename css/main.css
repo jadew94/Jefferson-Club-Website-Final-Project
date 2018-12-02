@@ -216,3 +216,8 @@ footer a:hover {
 
 
 /* CLUB DIRECTORY CSS */
+
+.clubicon {
+  float: left;
+  padding-right: 10px;
+}

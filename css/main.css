@@ -238,3 +238,39 @@ footer a:hover {
   border-radius: 15px;
   padding: 10px 15px;
 }
+
+
+/* HOME SIGN IN PAGE */
+
+.account-side-link {
+ padding-left: 1rem;
+ color: #336699;
+ font-family: 'Open Sans', sans-serif;
+}
+
+.account-navbar-side {
+  height: 100%;
+  width: 60%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0;
+  list-style: none;
+  border-left: 2px solid #2e2d2d;
+  background-color: #f7f7f9;
+  overflow-y: scroll;
+  z-index: 1000;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+
+.account-navbar-side-item {
+ padding: 1.5rem 0;
+ margin: 0;
+ border-bottom: 2px solid #2e2d2d;
+ height: 5rem;
+}

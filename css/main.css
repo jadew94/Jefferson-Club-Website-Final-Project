@@ -201,9 +201,7 @@ footer a:hover {
 
 /* EVENT CARD CSS */
 
-.singapalooza {
-  background: url("../images/singapaloozaheroimage.jpg") no-repeat center center;
-  background-size: cover;
+.singapaloozaheroimage {
   width: 100%;
   height: 100%;
 }
@@ -218,7 +216,3 @@ footer a:hover {
 
 
 /* CLUB DIRECTORY CSS */
-
-.clubicon {
-  display: inline-block;
-}

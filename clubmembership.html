@@ -84,16 +84,106 @@
       </div>
       <h4>Manage Roster</h4> <!-- Clickable Pills -->
       <ul class="nav nav-pills" id="myTab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Current</a>
+        <li class="nav-item pill-1 mr-2">
+          <a class="nav-link active darkblue" id="current-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Current</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Pending</a>
+        <li class="nav-item pill-2">
+          <a class="nav-link darkblue" id="pending-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Pending</a>
         </li>
       </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Yah</div>
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">hay</div>
+        <div class="tab-content mt-3" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> <!-- Current Tab Content -->
+            <div class="text-center">
+              <a href="#" class="btn btn-primary leave-club mt-4 mb-2"><i class="far fa-trash-alt mr-2"></i>End Membership</a>
+            </div>
+            <div class="container mt-3"> <!-- Search Bar-->
+            	<div class="row justify-content-center">
+                <div class="col-md-8">
+                  <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                      <input type="text" class="form-control input-lg" placeholder="Search for Members"/>
+                      <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+            	</div>
+            </div> <!-- End of Search Bar-->
+            <div class="table-responsive">
+            <table class="table table-hover mt-3 mb-5">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Select</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Position</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    </div>
+                  </td>
+                  <td>Abigail</td>
+                  <td>Brown</td>
+                  <td>President</td>
+                  <td><i class="fas fa-edit"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    </div>
+                  </td>
+                  <td>Jade</td>
+                  <td>Wilburn</td>
+                  <td>Webmaster</td>
+                  <td><i class="fas fa-edit"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    </div>
+                  </td>
+                  <td>Kyle</td>
+                  <td>Morgan</td>
+                  <td>Member</td>
+                  <td><i class="fas fa-edit"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    </div>
+                  </td>
+                  <td>Colin</td>
+                  <td>Smith</td>
+                  <td>Member</td>
+                  <td><i class="fas fa-edit"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    </div>
+                  </td>
+                  <td>Seth</td>
+                  <td>Zuckers</td>
+                  <td>Vice President</td>
+                  <td><i class="fas fa-edit"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>  <!-- End of Current Tab content -->
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">hay</div>
         </div>
 
     </div> <!-- End of container -->

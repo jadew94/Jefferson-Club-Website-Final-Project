@@ -24,7 +24,6 @@ $( document ).ready(function() {
     $('.overlay').hide();
   });
 
-
   // JQueryUI date picker for event calendar
   $( function() {
      $( ".datepicker" ).datepicker();

@@ -75,94 +75,54 @@
           <a class="dropdown-item" href="#">Members</a>
         </div>
       </div>
-      <div class="row mb-4"> <!-- Notification Title -->
-        <h2 class="mt-4 ml-2 display-5">Manage Club Events</h2>
-      </div> <!-- Notification Title -->
-        <div class="text-center">
-          <a href="#" class="btn btn-primary mb-5"><i class="fas fa-plus mr-2"></i>Create New Event</a>
-        </div>
-        <!-- Clickable Pills -->
-        <ul class="nav nav-pills" id="myTab" role="tablist">
-          <li class="nav-item pill-1 mr-2">
-            <a class="nav-link active darkblue" id="current-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Current Events</a>
-          </li>
-          <li class="nav-item pill-2">
-            <a class="nav-link darkblue" id="pending-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Past Events</a>
-          </li>
-        </ul>
-        <div class="tab-content mt-5" id="myTabContent">
-          <div class="tab-pane fade show active" id="home" role="tabpanel"> <!-- Current Tab Content -->
-            <div class="container mt-3"> <!-- Search Bar-->
-            	<div class="row justify-content-center">
-                <div class="col-md-8">
-                  <div id="custom-search-input-1">
-                    <div class="input-group col-md-12">
-                      <input type="text" class="form-control input-lg" placeholder="Search for Events"/>
-                      <span class="input-group-btn">
-                        <button class="btn btn-info btn-lg" type="button">
-                            <i class="fas fa-search"></i>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-            	</div>
-            </div> <!-- End of Search Bar-->
-            <div class="card mt-5"> <!-- Event Card 1-->
-              <img class="card-img-top" src="images/Event_Card_Photos/mental_health.jpg" alt="conversational bubble asking how you are feeling">
-              <div class="card-body">
-                <h5 class="card-title">Mental Health Day</h5>
-                  <ul>
-                    <li> Tuesday, December 18 at 5:00pm EST </li>
-                    <li> Kanbar Lounge </li>
-                  </ul>
-              </div>
-              <div class="card-footer">
-                <img src="images/Organization_Icons/mentalmind.png" alt="purple mental health icon" class="eventicon" height="35"><small class="text-dark">Active Minds</small>
-              </div>
-            </div> <!-- End Event Card 1-->
-            <br>
+      <h2 class="mt-5">Create Event</h2>
+      <form class="mt-4">
+        <label for="basic-url" class="background-color">Event Title</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            </div>
+            <input type="text" class="form-control" id="basic-url">
           </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel"> <!-- Pending Tab Content -->
-          <div class="container mt-3"> <!-- Search Bar-->
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <div id="custom-search-input">
-                  <div class="input-group col-md-12">
-                    <input type="text" class="form-control input-lg" placeholder="Search for Events"/>
-                    <span class="input-group-btn">
-                      <button class="btn btn-info btn-lg" type="button">
-                          <i class="fas fa-search"></i>
-                      </button>
-                    </span>
-                  </div>
-                </div>
+          <label for="basic-url" class="background-color">Event Category</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
               </div>
+              <input type="text" class="form-control" id="basic-url1">
             </div>
-          </div> <!-- End of Search Bar-->
-          <div class="card mt-5"> <!-- Event Card 1-->
-            <img class="card-img-top" src="images/Event_Card_Photos/bakesale.jpg" alt="bake sale words in cookies">
-            <div class="card-body">
-              <h5 class="card-title">Bake Sale Fundraiser</h5>
-                <ul>
-                  <li> Tuesday, October 27 at 12:00pm EST </li>
-                  <li> Kanbar Lounge </li>
-                </ul>
-            </div>
-            <div class="card-footer">
-              <img src="images/Organization_Icons/mentalmind.png" alt="purple mental health icon" class="eventicon" height="35"><small class="text-dark">Active Minds</small>
-            </div>
-          </div> <!-- End Event Card 1-->
+        <div class="form-group">
+          <label for="exampleFormControlTextarea2" class="background-color">Event Description</label>
+          <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlFile1" class="background-color">Event Photo (400 x 400 px)</label>
           <br>
-        </div> <!-- End of Pending Tab content -->
-      </div> <!-- End of clickable tabs -->
-    </div> <!-- End of container -->
-    <footer class="page-footer font-small"> <!-- Footer -->
+          <input type="file" class="form-control-file mt-3" id="exampleFormControlFile1">
+        </div>
+        <label for="basic-url" class="background-color">Co-host Club</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            </div>
+            <input type="text" class="form-control" id="basic-url2" placeholder="Type to search">
+          </div>
+        <label for="example-date-input" class="background-color">Date</label>
+          <input class="form-control mb-3" type="date" value="2018-12-31" id="example-date-input">
+        <label for="example-time-input1" class="background-color">Time</label>
+          <input class="form-control mb-3" type="time" value="13:45:00" id="example-time-input1">
+        <label for="basic-url" class="background-color">Location</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            </div>
+            <input type="text" class="form-control" id="basic-url3">
+          </div>
+      </form>
+      <a href="#" class="btn btn-primary btn-block mt-4 mb-5"><i class="fas fa-plus mr-2"></i>Create Event</a>
+    <br>
+  </div> <!-- End of container -->
+    <footer class="page-footer font-small w-100"> <!-- Footer -->
       <div class="text-center text-light py-3">© 2018 Copyright:
         <a href="https://jade-wilburn.squarespace.com/"> Jade Wilburn</a>
       </div>
     </footer> <!-- End of Footer -->
-
 
 
 

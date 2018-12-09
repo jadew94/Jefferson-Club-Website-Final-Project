@@ -104,19 +104,19 @@ i {
 }
 
 /* Search Bar */
-#custom-search-input{
+#custom-search-input, #custom-search-input-1{
     padding: 3px;
     border: solid 1px #E4E4E4;
     border-radius: 6px;
     background-color: #fff;
 }
 
-#custom-search-input input{
+#custom-search-input input, #custom-search-input-1 input{
     border: 0;
     box-shadow: none;
 }
 
-#custom-search-input button{
+#custom-search-input button, #custom-search-input-1 button{
     margin: 2px 0 0 0;
     background: none;
     box-shadow: none;
@@ -126,13 +126,13 @@ i {
     border-left: solid 1px #ccc;
 }
 
-#custom-search-input button:hover{
+#custom-search-input button:hover, #custom-search-input-1 button:hover{
     border: 0;
     box-shadow: none;
     border-left: solid 1px #ccc;
 }
 
-#custom-search-input .glyphicon-search{
+#custom-search-input .glyphicon-search, #custom-search-input-1 .glyphicon-search{
     font-size: 16px;
 }
 

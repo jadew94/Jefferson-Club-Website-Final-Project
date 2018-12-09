@@ -78,28 +78,28 @@
       <div class="row"> <!-- Notification Title -->
         <h2 class="mt-4 ml-2 display-5">Club Membership Roster</h2>
       </div> <!-- Notification Title -->
-      <div class="text-center mb-5">
-        <a href="#" class="btn btn-primary mt-3"><i class="fas fa-edit mr-2"></i>Manage Positions</a>
+      <div class="text-center mt-3 mb-5">
         <a href="#" class="btn btn-primary mt-3"><i class="fas fa-envelope mr-2"></i>Invite Members</a>
+        <a href="#" class="btn btn-primary mt-3"><i class="fas fa-edit mr-2"></i>Manage Positions</a>
       </div>
       <h4>Manage Roster</h4> <!-- Clickable Pills -->
-      <ul class="nav nav-pills" id="myTab" role="tablist">
-        <li class="nav-item pill-1 mr-2">
-          <a class="nav-link active darkblue" id="current-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Current</a>
-        </li>
-        <li class="nav-item pill-2">
-          <a class="nav-link darkblue" id="pending-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Pending</a>
-        </li>
-      </ul>
+        <ul class="nav nav-pills" id="myTab" role="tablist">
+          <li class="nav-item pill-1 mr-2">
+            <a class="nav-link active darkblue" id="current-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Current</a>
+          </li>
+          <li class="nav-item pill-2">
+            <a class="nav-link darkblue" id="pending-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Pending</a>
+          </li>
+        </ul>
         <div class="tab-content mt-3" id="myTabContent">
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> <!-- Current Tab Content -->
+          <div class="tab-pane fade show active" id="home" role="tabpanel"> <!-- Current Tab Content -->
             <div class="text-center">
               <a href="#" class="btn btn-primary leave-club mt-4 mb-2"><i class="far fa-trash-alt mr-2"></i>End Membership</a>
             </div>
             <div class="container mt-3"> <!-- Search Bar-->
             	<div class="row justify-content-center">
                 <div class="col-md-8">
-                  <div id="custom-search-input">
+                  <div id="custom-search-input-1">
                     <div class="input-group col-md-12">
                       <input type="text" class="form-control input-lg" placeholder="Search for Members"/>
                       <span class="input-group-btn">
@@ -133,7 +133,7 @@
                   <td>Abigail</td>
                   <td>Brown</td>
                   <td>President</td>
-                  <td><i class="fas fa-edit"></td>
+                  <td><i class="fas fa-edit"></i></td>
                 </tr>
                 <tr>
                   <td>
@@ -144,7 +144,7 @@
                   <td>Jade</td>
                   <td>Wilburn</td>
                   <td>Webmaster</td>
-                  <td><i class="fas fa-edit"></td>
+                  <td><i class="fas fa-edit"></i></td>
                 </tr>
                 <tr>
                   <td>
@@ -155,37 +155,91 @@
                   <td>Kyle</td>
                   <td>Morgan</td>
                   <td>Member</td>
-                  <td><i class="fas fa-edit"></td>
+                  <td><i class="fas fa-edit"></i></td>
                 </tr>
                 <tr>
                   <td>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
                     </div>
                   </td>
                   <td>Colin</td>
                   <td>Smith</td>
                   <td>Member</td>
-                  <td><i class="fas fa-edit"></td>
+                  <td><i class="fas fa-edit"></i></td>
                 </tr>
                 <tr>
                   <td>
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
                     </div>
                   </td>
                   <td>Seth</td>
                   <td>Zuckers</td>
                   <td>Vice President</td>
-                  <td><i class="fas fa-edit"></td>
+                  <td><i class="fas fa-edit"></i></td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>  <!-- End of Current Tab content -->
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">hay</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel"> <!-- Pending Tab Content -->
+          <div class="text-center">
+            <a href="#" class="btn btn-primary mt-4 mb-2"><i class="fas fa-envelope mr-2"></i>Resend Invitation</a>
+            <a href="#" class="btn btn-primary leave-club mt-2 mb-2"><i class="far fa-trash-alt mr-2"></i>Delete Invitation</a>
+          </div>
+          <div class="container mt-3"> <!-- Search Bar-->
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div id="custom-search-input">
+                  <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Search Invitations"/>
+                    <span class="input-group-btn">
+                      <button class="btn btn-info btn-lg" type="button">
+                          <i class="fas fa-search"></i>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- End of Search Bar-->
+          <div class="table-responsive">
+            <table class="table table-hover mt-3 mb-5">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Select</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Invitation Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                    </div>
+                  </td>
+                  <td>Lindsay</td>
+                  <td>Logan</td>
+                  <td>11/3/18</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                    </div>
+                  </td>
+                  <td>Jamal</td>
+                  <td>Klein</td>
+                  <td>11/15/18</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-
+      </div> <!-- End of Pending Tab content -->
     </div> <!-- End of container -->
     <footer class="page-footer font-small"> <!-- Footer -->
       <div class="text-center text-light py-3">© 2018 Copyright:

@@ -25,6 +25,10 @@ i {
   color: #2e2d2d;
 }
 
+.dark-blue {
+  color: #336699;
+}
+
 /* Navigation Side Bar */
 .navbar-side {
   height: 100%;
@@ -295,4 +299,14 @@ footer a:hover {
 .nav-pills .pill-2 .nav-link {
     border-bottom: 3px solid #336699;
     background-color: #336699;
+}
+
+
+/* MANAGE EVENT DETAILS PAGE */
+
+.table-wrapper-scroll-y {
+display: block;
+max-height: 200px;
+overflow-y: auto;
+-ms-overflow-style: -ms-autohiding-scrollbar;
 }

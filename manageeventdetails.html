@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jefferson Event and Club Directory</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Our Code Starts Here -->
+    <div class="container content-box">  <!-- Begin Outer Container -->
+      <nav class="navbar navbar-light navbar-static bg-faded"> <!-- Navigation/Heading -->
+        <div>
+          <a href="#"><img src="images/J_logo.png" alt="Jefferson school logo" class="logo mt-4" height="50"></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link sign-in ml-2" href="#">Hello, Jade!</a>
+              <ul class="navbar-side add-width" id="AccountnavbarSide"> <!-- Account side bar -->
+                <li class="account-navbar-side-item">
+                  <i class="fas fa-user-circle fa-lg icon"></i><a href="#" class="account-side-link">Account</a>
+                </li>
+                <li class="account-navbar-side-item">
+                  <i class="far fa-id-card fa-lg icon"></i><a href="#" class="account-side-link">Memberships</a>
+                </li>
+                <li class="account-navbar-side-item">
+                  <i class="fas fa-envelope fa-lg icon"></i><a href="#" class="account-side-link">Notifications</a>
+                </li>
+                <li class="account-navbar-side-item">
+                  <div class="dropdown">
+                    <i class="fas fa-users-cog fa-lg icon"></i><a class="dropdown-toggle account-side-link" href="#" role="button"
+                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Club</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Active Minds</a>
+                      <a class="dropdown-item" href="#">Jefferson Singers</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            <div class="overlay"></div> <!-- End of Account side bar -->
+          </li>
+        <li><button class="navbar-toggler pull-xs-right mt-2 ml-5" id="navbarSideButton" type="button">
+            &#9776;
+          </button></li>
+        </ul>
+          <ul class="navbar-side" id="navbarSide"> <!-- navbar side bar -->
+            <li class="navbar-side-item">
+              <i class="fas fa-home fa-lg icon"></i><a href="#" class="side-link">Home</a>
+            </li>
+            <li class="navbar-side-item">
+              <i class="far fa-calendar-alt fa-lg icon"></i><a href="#" class="side-link">Events</a>
+            </li>
+            <li class="navbar-side-item">
+              <i class="fas fa-users fa-lg icon"></i><a href="#" class="side-link">Clubs</a>
+            </li>
+          </ul>
+        <div class="overlay"></div>
+      </nav> <!-- End of Navigation/Heading -->
+      <hr>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Club Admin Menu
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item disabled" href="#">Active Minds Club</a>
+          <a class="dropdown-item" href="#">Home</a>
+          <a class="dropdown-item" href="#">About</a>
+          <a class="dropdown-item" href="#">Push Notifications</a>
+          <a class="dropdown-item" href="#">Events</a>
+          <a class="dropdown-item" href="#">Members</a>
+        </div>
+      </div>
+      <a href="#" class="dark-blue"><i class="fas fa-long-arrow-alt-left mr-2 mt-4 mb-4 no-padding"></i>Back to Events List</a>
+      <h2 class="mb-3 mt-2">Manage Event Details</h2>
+      <a href="#" class="btn btn-primary mt-4 mb-2"><i class="fas fa-plus mr-2"></i>Update Event Details</a>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Mental Health Day</h4>
+          <h5 class="card-subtitle mt-4 mb-3">Host Club</h5>
+          <div style="display:inline-block;vertical-align:top;">
+            <img src="images/Organization_Icons/mentalmind.png" alt="img"/>
+        </div>
+        <div style="display:inline-block;">
+            <p class="mt-4 ml-3">Active Minds</p>
+        </div>
+        <h5 class="card-subtitle mt-4 mb-3">Event Description</h5>
+          <div style="display:inline-block;vertical-align:top;">
+            <i class="far fa-file-alt fa-2x ml-3"></i>
+          </div>
+          <div style="">
+            <p class="mt-2">Join us in Kanbar Lounge as we conduct a special talk on mental health resources around Jefferson Campus.</p>
+          </div>
+        <h5 class="card-subtitle mt-4 mb-3">Location</h5>
+          <div style="display:inline-block;vertical-align:top;">
+            <i class="fas fa-map-marker-alt fa-2x ml-3"></i>
+          </div>
+          <div style="display:inline-block;">
+            <p class="mt-1 ml-4">Kanbar Lounge</p>
+          </div>
+        <h5 class="card-subtitle mt-4 mb-3">Date</h5>
+          <div style="display:inline-block;vertical-align:top;">
+            <i class="far fa-calendar-alt fa-2x ml-3"></i>
+          </div>
+          <div style="display:inline-block;">
+            <p class="mt-1 ml-4">Tuesday, December 18</p>
+          </div>
+        <h5 class="card-subtitle mt-4 mb-3">Time</h5>
+          <div style="display:inline-block;vertical-align:top;">
+            <i class="far fa-clock fa-2x ml-3"></i>
+          </div>
+          <div style="display:inline-block;">
+            <p class="mt-1 ml-4">5:00pm</p>
+          </div>
+        </div>
+      </div> <!-- End of Card -->
+      <h2 class="mt-5 mb-3">RSVP List</h2>
+      <h5>Total: 7 RSVPs</h5>
+      <a href="#" class="btn btn-primary mt-4 mb-2"><i class="fas fa-plus mr-2"></i>Add RSVP</a>
+      <div class="table-responsive table-wrapper-scroll-y">
+      <table class="table table-hover mt-3 mb-5">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Date</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Doyle</td>
+            <td>Santos</td>
+            <td>12/1/18</td>
+            <td>d.santos@jefferson.edu</td>
+          </tr>
+          <tr>
+            <td>Darin</td>
+            <td>Kennedy</td>
+            <td>12/2/18</td>
+            <td>d.kennedy@jefferson.edu</td>
+          </tr>
+          <tr>
+            <td>Shane</td>
+            <td>Young</td>
+            <td>12/3/18</td>
+            <td>s.young@jefferson.edu</td>
+          </tr>
+          <tr>
+            <td>Krista</td>
+            <td>Carlson</td>
+            <td>12/4/18</td>
+            <td>k.carlson@jefferson.edu</td>
+          </tr>
+          <tr>
+            <td>Chad</td>
+            <td>Jefferson</td>
+            <td>12/4/18</td>
+            <td>c.jefferson@jefferson.edu</td>
+          </tr>
+          <tr>
+            <td>Pat</td>
+            <td>Jones</td>
+            <td>12/5/18</td>
+            <td>p.jones@jefferson.edu</td>
+          </tr>
+          <tr>
+            <td>Mamie</td>
+            <td>Fuller</td>
+            <td>12/7/18</td>
+            <td>m.fuller@jefferson.edu</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>  <!-- End of Current Tab content -->
+    <br>
+  </div> <!-- End of container -->
+    <footer class="page-footer font-small w-100"> <!-- Footer -->
+      <div class="text-center text-light py-3">© 2018 Copyright:
+        <a href="https://jade-wilburn.squarespace.com/"> Jade Wilburn</a>
+      </div>
+    </footer> <!-- End of Footer -->
+
+
+
+
+
+
+
+
+
+    <!-- Our Code Ends Here -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then custom JS in the "bucket" -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="libraries/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/bucket.js"></script>
+  </body>
+</html>

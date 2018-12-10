@@ -288,21 +288,26 @@ footer a:hover {
 /* not active */
 .nav-pills .pill-1 .nav-link:not(.active) {
     background-color: #d9e1e8;
+    color: #2e2d2d !important;
+
 }
 
 .nav-pills .pill-2 .nav-link:not(.active) {
     background-color: #d9e1e8;
+    color: #2e2d2d !important;
 }
 
 /* active (faded) */
 .nav-pills .pill-1 .nav-link {
     border-bottom: 3px solid #336699;
     background-color: #336699;
+    color: #ffffff !important;
 }
 
 .nav-pills .pill-2 .nav-link {
     border-bottom: 3px solid #336699;
     background-color: #336699;
+    color: #ffffff !important;
 }
 
 

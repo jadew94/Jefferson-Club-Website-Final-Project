@@ -21,12 +21,16 @@ i {
 }
 .no-padding {padding: 0px;}
 
-.icon {
-  color: #2e2d2d;
+.icon, .nav-link {
+  color: #2e2d2d !important;
 }
 
 .dark-blue {
   color: #336699;
+}
+
+.blueborder {
+  border-bottom: 3px solid #2e2d2d;
 }
 
 /* Navigation Side Bar */

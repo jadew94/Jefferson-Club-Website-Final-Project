@@ -26,7 +26,7 @@ i {
 }
 
 .dark-blue {
-  color: #336699;
+  color: #336699 !important;
 }
 
 .blueborder {
